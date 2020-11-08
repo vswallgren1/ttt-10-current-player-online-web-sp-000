@@ -1,11 +1,11 @@
 def turn_count(board)
-  i = 0
+  turn = 0
   count = 0
-  while i <= 9
-    if board[i] == "X" || board[i] == "O"
+  while turn <= 9
+    if board[turn] == "X" || board[turn] == "O"
       count += 1
     end
-    i += 1
+    turn += 1
   end
   count
 end
